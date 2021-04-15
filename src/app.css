@@ -1,0 +1,113 @@
+body {
+  background-image: url("background.svg");
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.container , .completeTaskContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 15px auto;
+}
+
+.completeTaskHeading {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.taskContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#value {
+  height: 38px;
+  width: 71%;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.button {
+  padding: 6px 26px;
+  font-size: 1.5rem;
+  background: #090259;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #291ea2;
+}
+
+.checkbox {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.container span,
+.completeTaskContainer span {
+  font-size: 2rem;
+}
+
+.deleteImg {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.checkImg {
+  width: 45px;
+  height: 45px;
+}
+
+ /* CheckBox */
+.checkBox {
+  position: relative;
+}
+
+.checkBoxTick {
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  display: none;
+}
+
+.checkBox:hover  .checkBoxTick {
+  display: block;
+  cursor: pointer;
+}
+
+
+/* Completed Task */
+
+.completeTask {
+  text-decoration: line-through;
+}
