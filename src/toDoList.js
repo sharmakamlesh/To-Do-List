@@ -24,7 +24,6 @@ export const ToDoList = (props) => {
 
   //Deleting ToDo Task
   const deleteToDoTask = (taskIndex) => {
-    console.log(taskIndex)
     const tasks = [...input];
     tasks.splice(taskIndex, 1);
     setInput(tasks)
@@ -37,7 +36,6 @@ export const ToDoList = (props) => {
     setChecked([...checked, task]);
     const tasks = [...input];
     tasks.splice(taskIndex, 1);
-    console.log("tasks are ",tasks);
     setInput(tasks);
   };
 

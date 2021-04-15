@@ -1,35 +1,27 @@
 import React from 'react';
-
-
+import { checkBox,checkTick,deleteAddTask } from '../constant';
 export const ToDoTask = ( props) => {
  
     return props.list.map((todo,index)=>{return (
       <div className="container" key={index} id = {index}>
-          <span className="checkBox"
-            onClick={()=>props.checkTask(todo,index)}  
-            >
-          <img 
-          className="checkbox"
-          src="https://www.iconsdb.com/icons/preview/white/square-rounded-xxl.png"
-          alt="checkIcon"
-          
-          />
+          <span
+           className="checkBox"
+           onClick={()=>props.checkTask(todo,index)}>
+            <img 
+              src={checkBox}
+              alt="checkbox"
+              className="checkbox"
+            />
           <img
             className="checkBoxTick"
-            src="https://www.iconsdb.com/icons/preview/guacamole-green/check-mark-3-xxl.png"
+            src={checkTick}
             alt="tick"
           />
           </span>
-        {/* <input
-          type="checkbox"
-          
-          onClick={()=>props.checkTask(todo,index)}
-          // onClick={props.deleteToDoTask}
-        /> */}
         <span>{todo}</span>
         <span>
           <img
-            src="https://www.iconsdb.com/icons/preview/white/delete-xxl.png"
+            src={deleteAddTask}
             alt="delete"
             className="deleteImg"
             onClick={()=>props.deleteToDoTask(index)}
@@ -39,3 +31,5 @@ export const ToDoTask = ( props) => {
     );})
     
   };
+
+  

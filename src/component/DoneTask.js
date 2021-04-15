@@ -1,4 +1,5 @@
 import React from 'react';
+import { completeTaskTick,deleteCompleteTask } from '../constant';
 
 export const DoneValue = (props) => {
     return props.completeList.map((task,index) => (
@@ -6,12 +7,12 @@ export const DoneValue = (props) => {
         <img
           className="checkImg"
           alt="checked"
-          src="https://www.iconsdb.com/icons/preview/white/check-mark-3-xxl.png"
+          src={completeTaskTick}
         />
         <span className="completeTask">{task}</span>
         <span>
           <img
-            src="https://www.iconsdb.com/icons/preview/white/close-window-xxl.png"
+            src={deleteCompleteTask}
             alt="delete"
             className="deleteImg"
             onClick={() => props.deleteDoneTask(index)}
@@ -21,3 +22,5 @@ export const DoneValue = (props) => {
     )
     )
   };
+
+  

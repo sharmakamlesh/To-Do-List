@@ -1,5 +1,5 @@
 body {
-  background-image: url("background.svg");
+  background-image: url("../background.svg");
   color: white;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,8 +49,8 @@ body {
 }
 
 .button {
-  padding: 6px 26px;
-  font-size: 1.5rem;
+  padding: 9px 26px;
+  font-size: 17.5px;
   background: #090259;
   color: white;
   font-weight: bold;
@@ -73,12 +73,17 @@ body {
 .container span,
 .completeTaskContainer span {
   font-size: 2rem;
+  overflow-wrap: anywhere;
 }
 
-.deleteImg {
+.deleteImg{
   width: 45px;
   height: 45px;
   cursor: pointer;
+}
+
+.far {
+  width: 50px;
 }
 
 .checkImg {
@@ -93,11 +98,12 @@ body {
 
 .checkBoxTick {
   width: 35px;
-  height: 30px;
+  height: 35px;
   position: absolute;
-  left: 6px;
-  top: 6px;
+  left: 5px;
+  top: 5px;
   display: none;
+  z-index: 5;
 }
 
 .checkBox:hover  .checkBoxTick {
