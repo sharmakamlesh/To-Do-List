@@ -3,11 +3,7 @@ import "./css/app.css";
 import { ToDoList } from './toDoList';
 
 const App = () => {
-  return (
-    
-   <ToDoList/>
-
-  );
+  return (<ToDoList/>);
 }
 
 export default App;

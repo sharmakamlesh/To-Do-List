@@ -1,7 +1,7 @@
 import React from 'react';
 import { completeTaskTick,deleteCompleteTask } from '../constant';
 
-export const DoneValue = (props) => {
+export const CompletedTask = (props) => {
     console.log(props.completeList)
     if(props.completeList.length === 0) {
       return <h1 className='not-complete'>Not Completed Any Task</h1>
