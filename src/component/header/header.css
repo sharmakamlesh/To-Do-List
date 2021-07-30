@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 .5rem;
+}
+
+header .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header nav div {
+    margin: 0 0 0 1rem;
+}
+
+header .logo span {
+    font-weight: bold;
+    color: #1eb4f5;
+}
+
+.active {
+    color: grey;
+}
+
+.link {
+    color: white;
+}
+
+/*============Mobile Design==================*/
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav div {
+        margin: 1rem 0;
+    }
+
+}
