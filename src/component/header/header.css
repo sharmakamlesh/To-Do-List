@@ -20,7 +20,7 @@ header nav {
     align-items: flex-start;
 }
 
-header nav div {
+header nav h3 {
     margin: 0 0 0 1rem;
     letter-spacing: 1px;
 }
@@ -31,7 +31,7 @@ header .logo span {
 }
 
 .active {
-    color: grey;
+    color: #ABAFB3;
 }
 
 .link {

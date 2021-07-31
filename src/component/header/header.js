@@ -27,14 +27,14 @@ export const Header = (props) => {
             </div>
             <nav>
             <Link to='/' style={{textDecoration: 'none'}} >
-                <div className={active ?'link':'active'} onClick={() => clickHandler('incomplete')}>
+                <h3 className={active ?'link':'active'} onClick={() => clickHandler('incomplete')}>
                     Incomplete Task
-                </div>
+                </h3>
             </Link>
             <Link to='/completed-task' style={{textDecoration: 'none'}}>
-                <div className={active ?'active':'link'} onClick={() => clickHandler('complete')}>
+                <h3 className={active ?'active':'link'} onClick={() => clickHandler('complete')}>
                      Completed Task
-                </div>
+                </h3>
             </Link>
             </nav>
             
